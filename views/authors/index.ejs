@@ -1,0 +1,13 @@
+<h2>Search Parked-User Data</h2>
+
+<form action="/authors" method="GET">
+<label>Name</label>
+<input type="text" name="name" value="<%= searchOptions.name %>">
+<button type="submit">Search</button>
+</form>
+<br>
+<% authors.forEach(author =>{ %>
+    <div> Name :- <%= author.name %> <br> Email: <%= author.email %> <br> Number: (+91) <%= author.number  %> <br> Car Number: <%= author.carData %>
+        <p>//-------------------------------------------//</p></div>
+
+<% }) %>

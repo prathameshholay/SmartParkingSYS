@@ -1,0 +1,18 @@
+<!-- views/clientView.ejs -->
+
+<% layout = 'layouts/redirect-layout' %>
+
+<!-- Add the content specific to the redirected page here -->
+<h1>Client View Page</h1>
+<p>This is the page the QR code redirects to.</p>
+
+
+
+<h2>Enter your Data dont clink any thig else other wise the authority wont spare you bitch</h2>
+
+<form action="/authors" method="POST">
+    <%- include('_form_fields') %>
+    <a href="/authors">Cancel</a>
+    <button type="submit">Create</button>
+
+</form>
